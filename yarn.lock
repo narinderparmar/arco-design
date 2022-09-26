@@ -4039,7 +4039,7 @@ b-tween@^0.3.3:
   resolved "https://registry.npmjs.org/b-tween/-/b-tween-0.3.3.tgz"
   integrity sha512-oEHegcRpA7fAuc9KC4nktucuZn2aS8htymCPcP3qkEGPqiBH+GfqtqoG2l7LxHngg6O0HFM7hOeOYExl1Oz4ZA==
 
-b-validate@1.4.2:
+b-validate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/b-validate/-/b-validate-1.4.2.tgz#89f8529e789d72be7c1cd0047f35af6a24072f54"
   integrity sha512-UJ9Wvol6ogFQ+YBwtPwSg7uKWQ8ORUTD5RVE8SASu3oXOmuEynCLkeZJYJsSMnvK3RYrQx3/s352FX6o1ha24A==

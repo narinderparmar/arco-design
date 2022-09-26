@@ -38,7 +38,6 @@
     cursor: pointer;
     line-height: @select-popup-option-height;
     border-radius: @select-popup-option-border-radius;
-
     .text-ellipsis();
 
     .option-color(@status) {
@@ -80,7 +79,6 @@
 
     .@{select-prefix-cls}-checkbox {
       padding: 0 5px;
-
       // 避免点击复选框导致 select-view 的输入框失焦
       input {
         display: none;
@@ -98,8 +96,7 @@
   &-group-title {
     box-sizing: border-box;
     width: 100%;
-    padding: @select-popup-group-title-padding-top @select-popup-group-title-padding-horizontal 0
-      @select-popup-group-title-padding-horizontal;
+    padding: @select-popup-group-title-padding-top @select-popup-group-title-padding-horizontal 0 @select-popup-group-title-padding-horizontal;
     line-height: @select-popup-group-title-height;
     font-size: @select-popup-group-title-font-size;
     color: @select-popup-group-title-color-text;
@@ -121,3 +118,13 @@
 }
 
 .select-view-rtl(@select-prefix-cls, @select-prefix-cls-rtl);
+
+.@{select-prefix-cls}-container {
+  display: block !important;
+  list-style-type: none !important;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  padding-inline-start: 0px !important;
+}

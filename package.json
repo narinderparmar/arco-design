@@ -9,6 +9,7 @@
   "scripts": {
     "prepublishOnly": "yarn generate-version && yarn icon && yarn build",
     "init": "./scripts/init.sh",
+    "init-windows": "./scripts/init.bat",
     "dependencies": "./scripts/dependencies.sh",
     "git": "git add .",
     "start": "concurrently npm:dev npm:dev:site",

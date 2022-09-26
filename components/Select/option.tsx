@@ -71,33 +71,37 @@ function Option(props: OptionProps, ref) {
 
   if (_isMultipleMode) {
     return (
-      <li
-        {...wrapperProps}
-        className={cs(
-          `${prefixCls}-option-wrapper`,
-          {
-            [`${prefixCls}-option-wrapper-selected`]: isChecked,
-            [`${prefixCls}-option-wrapper-disabled`]: disabled,
-          },
-          wrapperClassName
-        )}
-      >
-        <Checkbox
-          aria-hidden="true"
-          className={`${prefixCls}-checkbox`}
-          checked={isChecked}
-          disabled={disabled}
-          onChange={optionLabelProps.onClick}
-        />
-        <span {...optionLabelProps}>{childNode}</span>
-      </li>
+      <ul className={`${prefixCls}-container`}>
+        <li
+          {...wrapperProps}
+          className={cs(
+            `${prefixCls}-option-wrapper`,
+            {
+              [`${prefixCls}-option-wrapper-selected`]: isChecked,
+              [`${prefixCls}-option-wrapper-disabled`]: disabled,
+            },
+            wrapperClassName
+          )}
+        >
+          <Checkbox
+            aria-hidden="true"
+            className={`${prefixCls}-checkbox`}
+            checked={isChecked}
+            disabled={disabled}
+            onChange={optionLabelProps.onClick}
+          />
+          <span {...optionLabelProps}>{childNode}</span>
+        </li>
+      </ul>
     );
   }
 
   return (
-    <li {...wrapperProps} {...optionLabelProps}>
-      {childNode}
-    </li>
+    <ul className={`${prefixCls}-container`}>
+      <li {...wrapperProps} {...optionLabelProps}>
+        {childNode}
+      </li>
+    </ul>
   );
 }
 
